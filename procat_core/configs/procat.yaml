@@ -1,0 +1,23 @@
+SOLVER:
+  BATCH_SIZE: 32
+  MAX_EPOCH: 100
+  LR: 5e-5
+  SEED: 1
+  # SEED: 42
+
+DA:
+  TASK: False
+  USE: False
+
+DECODER:
+  BINARY: 1
+
+RESULT:
+  OUTPUT_DIR: "./result/cluster"
+  SAVE_MODEL: True
+  
+# Config below only when you use comet
+COMET:
+  PROJECT_NAME: "DrugBAN_Vanilla"
+  TAG: "Non_DA"
+
