@@ -1,0 +1,6 @@
+name,Caco2(REG),MDCK_Efflux(Class),BBB(Class),hERG(REG),AMES(Class),Hepatotoxicity(Class),Phototoxicity(Class)
+"98-3-O-trans-p-coumaroyl-2α,3β,29-trihydroxy-olean-12-en-28-oic acid.sdf",1.79,Low Efflux,BBB-,12.79,Negative,Low Risk,Low Risk
+86-Crassifolin A.sdf,21.23,Low Efflux,BBB+,10.64,Negative,Low Risk,Low Risk
+101-Isogarcinol.sdf,2.47,High Efflux,BBB-,13.68,Negative,High Risk,Low Risk
+100-Garcoblone F.sdf,2.24,High Efflux,BBB-,10.4,Negative,Low Risk,High Risk
+111-(-)-Sophocarpine.sdf,10.14,Low Efflux,BBB+,211.35,Positive,Low Risk,Low Risk
