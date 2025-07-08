@@ -1,0 +1,14 @@
+MODEL:
+  BATCH_SIZE: 64
+  MAX_EPOCH: 100
+  LR: 5e-5
+  SEED: 42
+  TASK: False
+  USE: False
+  BINARY: 2
+  
+RESULT:
+  OUTPUT_DIR: "./model_weights/checkpoints/"
+  PRED_OUTPUT_DIR: "./result/"
+  SAVE_MODEL: True
+  

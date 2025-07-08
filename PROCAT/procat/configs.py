@@ -1,0 +1,61 @@
+from yacs.config import CfgNode as CN
+
+_C = CN()
+
+# Drug feature extractor
+_C.DRUG = CN()
+_C.DRUG.NODE_IN_FEATS = 75
+
+_C.DRUG.PADDING = True
+
+_C.DRUG.HIDDEN_LAYERS = [128, 128, 128]
+_C.DRUG.NODE_IN_EMBEDDING = 128
+_C.DRUG.MAX_NODES = 290
+
+# Protein feature extractor
+_C.PROTEIN = CN()
+_C.PROTEIN.NUM_FILTERS = [128, 128, 128]
+_C.PROTEIN.KERNEL_SIZE = [3, 6, 9]
+_C.PROTEIN.EMBEDDING_DIM = 128
+_C.PROTEIN.PADDING = True
+
+# BCN setting
+_C.BCN = CN()
+_C.BCN.HEADS = 2
+
+# MLP decoder
+_C.DECODER = CN()
+_C.DECODER.NAME = "MLP"
+_C.DECODER.IN_DIM = 256
+_C.DECODER.HIDDEN_DIM = 512
+_C.DECODER.OUT_DIM = 128
+# _C.DECODER.BINARY = 1
+
+# MODEL
+_C.MODEL = CN()
+_C.MODEL.MAX_EPOCH = 100
+_C.MODEL.BATCH_SIZE = 64
+_C.MODEL.NUM_WORKERS = 0
+_C.MODEL.LR = 5e-5
+_C.MODEL.DA_LR = 1e-3
+_C.MODEL.SEED = 2048
+_C.MODEL.BINARY = 1
+
+# Domain adaptation
+_C.MODEL.TASK = False
+_C.MODEL.USE = False
+_C.MODEL.INIT_EPOCH = 10
+_C.MODEL.LAMB_DA = 1
+_C.MODEL.RANDOM_LAYER = False
+_C.MODEL.ORIGINAL_RANDOM = False
+_C.MODEL.RANDOM_DIM = None
+_C.MODEL.USE_ENTROPY = True
+
+# RESULT
+_C.RESULT = CN()
+_C.RESULT.OUTPUT_DIR = "./model_weights/checkpoints/"
+_C.RESULT.PRED_OUTPUT_DIR = "./result/"
+_C.RESULT.SAVE_MODEL = True
+
+def get_cfg_defaults():
+    return _C.clone()
