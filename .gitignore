@@ -3,3 +3,5 @@ __pycache__
 .venv
 uv.lock
 pretain_autophagy_datasets_tif/
+PROCAT/model_weights/*
+PROCAT/result/*

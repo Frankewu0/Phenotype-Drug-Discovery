@@ -56,11 +56,10 @@ ProCAT (Protein Compound Affinity Transformer) is an interpretable deep learning
 ## 📊 Dataset Preparation
 
 ### Supported Datasets
-- **BindingDB**: Primary training dataset (download from [BindingDB](https://www.bindingdb.org/bind/index.jsp))
+- **BindingDB**: Primary training dataset (download from [BindingDB official site](https://www.bindingdb.org/bind/index.jsp))
 
 ### Model Checkpoints download
-
-Pretrained Model Weights (download from [Google Drive](https://drive.google.com/file/d/1ZH3fCnBLQ1kT_6NUCmb1DTJ8EzGzEPSC/view?usp=drive_link))
+Pretrained Model Weights (download from [Google Drive](https://drive.google.com/file/d/1ZH3fCnBLQ1kT_6NUCmb1DTJ8EzGzEPSC/view))
 
 
 ### Data Format
@@ -77,7 +76,7 @@ A sample dataset `demo_data.csv` is provided in `datasets/` for quick testing, c
 ## 📝 Usage Instructions
 
 ### 1. Train the Model
-Configure training parameters in `procat/config.yaml` (e.g., batch size, learning rate, epochs). Then run:
+Configure training parameters in `procat/config/config.yaml` (e.g., batch size, learning rate, epochs). Then run:
 ```bash
 python main.py --model_task train 
 ```
